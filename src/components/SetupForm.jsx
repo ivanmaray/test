@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { ROSCO_TOTAL } from '../data/roscoQuestions.js';
 
 const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuario, onStart, deshabilitarInicio }) => {
   const [modo, setModo] = useState('personalizado');
@@ -9,6 +10,8 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
   const [mezclarDificultades, setMezclarDificultades] = useState(false);
   const [numeroPreguntas, setNumeroPreguntas] = useState('10');
   const [tiempoPorPregunta, setTiempoPorPregunta] = useState('60');
+
+  const isRosco = modo === 'rosco';
 
   const subcategoriasDisponibles = useMemo(() => {
     const lista = subcategoriasPorCategoria.get(categoria) ?? [];
@@ -48,20 +51,54 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
     });
   }, [mezclarDificultades, modo, dificultades, defaultDificultad]);
 
+  useEffect(() => {
+    if (!isRosco) {
+      return;
+    }
+    if (!mezclarDificultades) {
+      setMezclarDificultades(true);
+    }
+    if (dificultad !== 'Todas') {
+      setDificultad('Todas');
+    }
+    if (subcategoria !== 'todas') {
+      setSubcategoria('todas');
+    }
+    if (numeroPreguntas !== String(ROSCO_TOTAL)) {
+      setNumeroPreguntas(String(ROSCO_TOTAL));
+    }
+    if (tiempoPorPregunta !== '30') {
+      setTiempoPorPregunta('30');
+    }
+  }, [isRosco, mezclarDificultades, dificultad, subcategoria, numeroPreguntas, tiempoPorPregunta]);
+
   const resumenSeleccion = useMemo(() => {
     const chips = [
-      { etiqueta: 'Modo', valor: modo === 'personalizado' ? 'Dirigido' : 'Aleatorio' },
-      { etiqueta: 'Categoría', valor: modo === 'aleatorio' ? 'Todas' : categoria || '—' },
+      {
+        etiqueta: 'Modo',
+        valor:
+          modo === 'personalizado' ? 'Dirigido' : modo === 'aleatorio' ? 'Aleatorio' : 'PasaPalabra',
+      },
+      {
+        etiqueta: 'Categoría',
+        valor: modo === 'personalizado' ? categoria || '—' : 'Todas',
+      },
       {
         etiqueta: 'Subcategoría',
         valor: modo === 'personalizado' && subcategoria !== 'todas' ? subcategoria : null,
       },
       {
         etiqueta: 'Dificultad',
-        valor: mezclarDificultades ? 'Mezcladas' : dificultad,
+        valor: mezclarDificultades || isRosco || modo === 'aleatorio' ? 'Mezcladas' : dificultad,
       },
-      { etiqueta: 'Preguntas', valor: `${numeroPreguntas}` },
-      { etiqueta: 'Tiempo', valor: `${tiempoPorPregunta} seg` },
+      {
+        etiqueta: 'Preguntas',
+        valor: isRosco ? `${ROSCO_TOTAL}` : `${numeroPreguntas}`,
+      },
+      {
+        etiqueta: 'Tiempo',
+        valor: isRosco ? '5 min globales' : `${tiempoPorPregunta} seg`,
+      },
     ];
 
     return chips.filter((chip) => chip.valor);
@@ -79,6 +116,15 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
           mezclarDificultades: true,
           numeroPreguntas: 10,
           tiempoPorPregunta: 45,
+        },
+      },
+      {
+        id: 'rosco',
+        icono: '🔤',
+        titulo: 'PasaPalabra',
+        descripcion: 'Rosco completo · 5 min',
+        ajustes: {
+          modo: 'rosco',
         },
       },
       {
@@ -145,16 +191,24 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
   );
 
   const tiempoTotalEstimado = useMemo(() => {
+    if (isRosco) {
+      return { totalSegundos: 300, etiqueta: '5m 00s' };
+    }
     const totalSegundos = Number(numeroPreguntas) * Number(tiempoPorPregunta);
     const minutos = Math.floor(totalSegundos / 60);
     const segundos = totalSegundos % 60;
     const etiqueta = `${minutos}m ${segundos.toString().padStart(2, '0')}s`;
     return { totalSegundos, etiqueta };
-  }, [numeroPreguntas, tiempoPorPregunta]);
+  }, [numeroPreguntas, tiempoPorPregunta, isRosco]);
 
   const insights = useMemo(
     () => [
-      {
+      isRosco && {
+        icono: '🔥',
+        titulo: 'Reto pasaletras',
+        descripcion: 'Recorre el alfabeto oncológico en 5 minutos. Ideal para repasar términos clave y vocabulario clínico.',
+      },
+      !isRosco && {
         icono: '🧭',
         titulo: modo === 'personalizado' ? 'Control dirigido' : 'Modo aleatorio',
         descripcion:
@@ -167,7 +221,7 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
         titulo: 'Duración estimada',
         descripcion: `Tu simulacro actual dura aproximadamente ${tiempoTotalEstimado.etiqueta}. Ajusta tiempo o preguntas si necesitas una sesión más corta.`,
       },
-      {
+      !isRosco && {
         icono: '🎓',
         titulo: 'Dificultad adaptativa',
         descripcion: mezclarDificultades
@@ -179,14 +233,24 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
         titulo: 'Variedad de categorías',
         descripcion: `Tienes ${categorias.length} grandes bloques temáticos disponibles. Combina clínica, farmacología y soporte para un repaso completo.`,
       },
-    ],
-    [modo, tiempoTotalEstimado.etiqueta, mezclarDificultades, categorias],
+    ].filter(Boolean),
+    [modo, tiempoTotalEstimado.etiqueta, mezclarDificultades, categorias, isRosco],
   );
 
   const aplicarPreset = (preset) => {
     const ajustes = preset.ajustes;
     const modoDestino = ajustes.modo ?? 'personalizado';
     setModo(modoDestino);
+
+    if (modoDestino === 'rosco') {
+      setCategoria(categorias[0] ?? categoria);
+      setSubcategoria('todas');
+      setDificultad('Todas');
+      setNumeroPreguntas(String(ajustes.numeroPreguntas ?? ROSCO_TOTAL));
+      setTiempoPorPregunta(String(ajustes.tiempoPorPregunta ?? 30));
+      setMezclarDificultades(true);
+      return;
+    }
 
     const categoriaDestino = ajustes.categoria && categorias.includes(ajustes.categoria)
       ? ajustes.categoria
@@ -219,6 +283,19 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (isRosco) {
+      onStart({
+        modo: 'rosco',
+        categoria: 'Todas',
+        dificultad: 'Todas',
+        mezclarDificultades: true,
+        subcategoria: 'todas',
+        numeroPreguntas: 20,
+        tiempoPorPregunta: 30,
+      });
+      return;
+    }
+
     onStart({
       modo,
       categoria,
@@ -310,6 +387,23 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
                   <span>Te mezclamos categorías y niveles automáticamente.</span>
                 </div>
               </label>
+
+              <label className={`setup__card ${modo === 'rosco' ? 'setup__card--active' : ''}`}>
+                <input
+                  type="radio"
+                  name="modo"
+                  value="rosco"
+                  checked={modo === 'rosco'}
+                  onChange={() => setModo('rosco')}
+                />
+                <div className="setup__card-icon" aria-hidden>
+                  🔤
+                </div>
+                <div className="setup__card-body">
+                  <strong>PasaPalabra</strong>
+                  <span>Un rosco oncológico completo. Responde con texto libre en 5 minutos.</span>
+                </div>
+              </label>
             </div>
           </fieldset>
 
@@ -320,7 +414,7 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
                 value={categoria}
                 onChange={(event) => setCategoria(event.target.value)}
                 required={modo === 'personalizado'}
-                disabled={modo === 'aleatorio'}
+                disabled={modo !== 'personalizado'}
               >
                 {categorias.map((categoriaActual) => (
                   <option key={categoriaActual} value={categoriaActual}>
@@ -333,12 +427,12 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
             <label className="setup__field">
               <span>Dificultad</span>
               <select
-                value={mezclarDificultades || modo === 'aleatorio' ? 'Todas' : dificultad}
+                value={mezclarDificultades || modo !== 'personalizado' ? 'Todas' : dificultad}
                 onChange={(event) => setDificultad(event.target.value)}
-                disabled={mezclarDificultades || modo === 'aleatorio'}
+                disabled={mezclarDificultades || modo !== 'personalizado'}
                 required
               >
-                {(mezclarDificultades || modo === 'aleatorio') && (
+                {(mezclarDificultades || modo !== 'personalizado') && (
                   <option value="Todas">Todas las dificultades (automático)</option>
                 )}
                 {dificultadesDisponibles.map((dificultadActual) => (
@@ -370,6 +464,7 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
                 max={50}
                 value={numeroPreguntas}
                 onChange={(event) => setNumeroPreguntas(event.target.value)}
+                disabled={isRosco}
               />
             </label>
 
@@ -382,6 +477,7 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
                 step={5}
                 value={tiempoPorPregunta}
                 onChange={(event) => setTiempoPorPregunta(event.target.value)}
+                disabled={isRosco}
               />
             </label>
           </div>
@@ -392,6 +488,7 @@ const SetupForm = ({ categorias, dificultades, subcategoriasPorCategoria, usuari
               type="checkbox"
               checked={mezclarDificultades}
               onChange={(event) => setMezclarDificultades(event.target.checked)}
+              disabled={isRosco}
             />
           </label>
 

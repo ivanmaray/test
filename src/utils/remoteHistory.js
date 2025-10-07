@@ -15,6 +15,7 @@ export const guardarIntentoRemoto = async (usuarioId, intento) => {
       configuracion: intento.configuracion,
       preguntas: intento.preguntas,
       respuestas: intento.respuestas,
+      respuestas_texto: intento.respuestasTexto ?? null,
       aciertos: intento.aciertos,
       tiempo_total: intento.tiempoTotal,
       tiempo_empleado: intento.tiempoEmpleado,
@@ -56,6 +57,7 @@ export const cargarIntentosRemotos = async (usuarioId, limite = 20) => {
         configuracion: registro.configuracion,
         preguntas: registro.preguntas ?? [],
         respuestas: registro.respuestas ?? [],
+        respuestasTexto: registro.respuestas_texto ?? [],
         aciertos: registro.aciertos ?? 0,
         tiempoTotal: registro.tiempo_total ?? null,
         tiempoEmpleado: registro.tiempo_empleado ?? null,
@@ -66,4 +68,3 @@ export const cargarIntentosRemotos = async (usuarioId, limite = 20) => {
     return { success: false, data: [], error };
   }
 };
-

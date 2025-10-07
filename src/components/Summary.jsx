@@ -24,7 +24,8 @@ const buildAggregate = (preguntas, respuestas, clave) => {
 };
 
 const Summary = ({ resultado, onRestart, onLaunchPreset }) => {
-  const { respuestas, preguntas, aciertos, configuracion, tiempoTotal, tiempoEmpleado } = resultado;
+  const { respuestas, preguntas, aciertos, configuracion, tiempoTotal, tiempoEmpleado, respuestasTexto } = resultado;
+  const respuestasLibres = respuestasTexto ?? [];
   const totalPreguntas = preguntas.length;
   const sinResponder = respuestas.filter((respuesta) => respuesta === undefined).length;
   const fallos = totalPreguntas - aciertos - sinResponder;
@@ -118,6 +119,8 @@ const Summary = ({ resultado, onRestart, onLaunchPreset }) => {
           Configuración:{' '}
           {configuracion.modo === 'aleatorio'
             ? 'Test aleatorio'
+            : configuracion.modo === 'rosco'
+            ? 'PasaPalabra'
             : configuracion.categoria ?? 'Sin categoría'}
           {configuracion.modo === 'personalizado' &&
           configuracion.subcategoria &&
@@ -229,11 +232,27 @@ const Summary = ({ resultado, onRestart, onLaunchPreset }) => {
                 {pregunta.subcategoria ? ` · ${pregunta.subcategoria}` : ''}
               </p>
               <p>
-                Tu respuesta: <strong>{pregunta.opciones[respuestaUsuario] ?? 'Sin responder'}</strong>
+                Tu respuesta:{' '}
+                <strong>
+                  {(() => {
+                    const libre = respuestasLibres[index]?.trim();
+                    if (libre) {
+                      return libre;
+                    }
+                    if (typeof respuestaUsuario === 'number' && respuestaUsuario >= 0) {
+                      return pregunta.opciones?.[respuestaUsuario] ?? 'Sin responder';
+                    }
+                    if (respuestaUsuario === undefined) {
+                      return 'Sin responder';
+                    }
+                    return '—';
+                  })()}
+                </strong>
               </p>
               {!correcta && (
                 <p>
-                  Respuesta correcta: <strong>{pregunta.opciones[pregunta.respuestaCorrecta]}</strong>
+                  Respuesta correcta:{' '}
+                  <strong>{pregunta.respuestaCorrectaTexto ?? pregunta.opciones?.[pregunta.respuestaCorrecta]}</strong>
                 </p>
               )}
               <p className="summary__explicacion">{pregunta.explicacion}</p>

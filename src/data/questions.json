@@ -8998,5 +8998,755 @@
     ],
     "respuestaCorrecta": 0,
     "explicacion": "Los pacientes con síndrome de Down y LMA M7 responden mejor a citarabina y antraciclinas pero requieren reducir dosis por toxicidad."
+  },
+  {
+    "id": "onco-601",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál de los siguientes subtipos histológicos pertenece al cáncer de pulmón no microcítico?",
+    "opciones": [
+      "Carcinoma neuroendocrino de célula pequeña",
+      "Carcinoma escamoso",
+      "Linfoma mediastínico",
+      "Tumor carcinoide típico"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El carcinoma escamoso es uno de los subtipos de cáncer de pulmón no microcítico, junto al adenocarcinoma y al carcinoma de células grandes."
+  },
+  {
+    "id": "onco-602",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué tratamiento estándar se recomienda en enfermedad extensa del carcinoma microcítico de pulmón (SCLC)?",
+    "opciones": [
+      "Nivolumab + ipilimumab",
+      "Cirugía + PCI",
+      "Quimioterapia platino-etopósido + inmunoterapia anti-PD-L1",
+      "Osimertinib"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La combinación de platino y etopósido más un anticuerpo anti-PD-L1, como atezolizumab o durvalumab, es el estándar actual en enfermedad extensa de SCLC."
+  },
+  {
+    "id": "onco-603",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Básico",
+    "pregunta": "¿Cuál de las siguientes opciones es un inhibidor de ALK aprobado en carcinoma de pulmón no microcítico?",
+    "opciones": [
+      "Osimertinib",
+      "Crizotinib",
+      "Sotorasib",
+      "Dabrafenib"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Crizotinib fue el primer inhibidor de ALK aprobado y sigue siendo una opción en pacientes con NSCLC ALK positivo."
+  },
+  {
+    "id": "onco-604",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué biomarcador es indispensable evaluar antes de iniciar inmunoterapia en monoterapia en NSCLC avanzado?",
+    "opciones": [
+      "CEA",
+      "ALK",
+      "PD-L1",
+      "EGFR"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La expresión de PD-L1 orienta la indicación de inmunoterapia en monoterapia, especialmente para pembrolizumab en pacientes con PD-L1 ≥50%."
+  },
+  {
+    "id": "onco-605",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Cuál de las siguientes combinaciones demostró beneficio en el estudio CheckMate 9LA?",
+    "opciones": [
+      "Pembrolizumab + bevacizumab",
+      "Cemiplimab + quimioterapia",
+      "Nivolumab + ipilimumab + 2 ciclos de quimioterapia",
+      "Alectinib + quimioterapia"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "CheckMate 9LA demostró que nivolumab + ipilimumab más dos ciclos de quimioterapia mejora la supervivencia frente a quimioterapia sola en NSCLC."
+  },
+  {
+    "id": "onco-606",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué toxicidad es característica de los TKIs EGFR como osimertinib?",
+    "opciones": [
+      "Alopecia",
+      "Hipotiroidismo",
+      "Neumonitis intersticial",
+      "Disgeusia"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La neumonitis intersticial es una toxicidad poco frecuente pero grave asociada a los TKIs anti-EGFR, incluido osimertinib."
+  },
+  {
+    "id": "onco-607",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué tratamiento está aprobado para pacientes con mutación KRAS G12C en cáncer de pulmón?",
+    "opciones": [
+      "Amivantamab",
+      "Entrectinib",
+      "Adagrasib",
+      "Brigatinib"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Adagrasib es uno de los inhibidores selectivos de KRAS G12C aprobados para NSCLC pretratado con esta mutación."
+  },
+  {
+    "id": "onco-608",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Avanzado",
+    "pregunta": "La combinación de atezolizumab + bevacizumab + quimioterapia está especialmente recomendada en pacientes con: ",
+    "opciones": [
+      "Neumonitis previa",
+      "Comorbilidades psiquiátricas",
+      "Metástasis hepáticas o autoinmunidad leve",
+      "Hipotiroidismo severo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La presencia de metástasis hepáticas es uno de los escenarios donde atezolizumab + bevacizumab + quimioterapia mostró beneficios en NSCLC."
+  },
+  {
+    "id": "onco-609",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué ensayo demostró el beneficio de durvalumab tras quimiorradioterapia en NSCLC estadio III irresecable?",
+    "opciones": [
+      "FLAURA",
+      "PACIFIC",
+      "ADAURA",
+      "EMPOWER"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El ensayo PACIFIC demostró la superioridad de durvalumab como consolidación tras CRT en estadio III irresecable."
+  },
+  {
+    "id": "onco-610",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Pulmón",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál es la principal indicación de lurbinectedina en el tratamiento del SCLC?",
+    "opciones": [
+      "Primera línea en enfermedad limitada",
+      "Consolidación tras CRT",
+      "Recaída precoz (menor de 90 días)",
+      "Recaída tardía (mayor de 6 meses)"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Lurbinectedina está indicada en el SCLC recurrente, especialmente en pacientes con recaída sensible tras un intervalo libre prolongado."
+  },
+  {
+    "id": "onco-611",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál es el principal factor de riesgo para desarrollar cáncer colorrectal?",
+    "opciones": [
+      "Consumo de alcohol",
+      "Tabaquismo",
+      "Edad avanzada",
+      "Diabetes"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La edad avanzada es el factor de riesgo más importante para el CCR esporádico, por lo que el cribado se enfoca en población mayor de 50 años."
+  },
+  {
+    "id": "onco-612",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué test de cribado se recomienda en población general de 50 a 69 años en España?",
+    "opciones": [
+      "Colonoscopia anual",
+      "Sangre oculta en heces",
+      "Ecografía abdominal",
+      "TAC abdominal"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El programa nacional de cribado utiliza el test de sangre oculta en heces bienal como estrategia coste-efectiva para población asintomática."
+  },
+  {
+    "id": "onco-613",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál de los siguientes efectos adversos es típico del oxaliplatino?",
+    "opciones": [
+      "Hipomagnesemia",
+      "Diarrea colinérgica",
+      "Neuropatía sensitiva",
+      "Cardiotoxicidad"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El oxaliplatino produce neuropatía sensitiva característica, tanto aguda por frío como crónica acumulativa."
+  },
+  {
+    "id": "onco-614",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué anticuerpo antiangiogénico actúa bloqueando específicamente VEGFR-2?",
+    "opciones": [
+      "Bevacizumab",
+      "Aflibercept",
+      "Ramucirumab",
+      "Cetuximab"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Ramucirumab es un anticuerpo monoclonal dirigido contra VEGFR-2, aprobado en CCR metastásico tras progresión a terapias previas."
+  },
+  {
+    "id": "onco-615",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué tratamiento se asocia típicamente a toxicidad cutánea tipo acnéiforme?",
+    "opciones": [
+      "Fruquintinib",
+      "Bevacizumab",
+      "Panitumumab",
+      "Irinotecán"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los anticuerpos anti-EGFR como panitumumab originan un exantema acneiforme característico cuya presencia se correlaciona con eficacia."
+  },
+  {
+    "id": "onco-616",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Básico",
+    "pregunta": "¿Qué biomarcador debe determinarse antes de iniciar tratamiento con anticuerpos anti-EGFR en CCR metastásico?",
+    "opciones": [
+      "MSI",
+      "TP53",
+      "BRAF",
+      "RAS"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La ausencia de mutaciones en RAS es requisito imprescindible para indicar anti-EGFR en CCR metastásico."
+  },
+  {
+    "id": "onco-617",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué fármaco oral ha sido aprobado para CCR metastásico tras fracaso a regorafenib y trifluridina-tipiracilo?",
+    "opciones": [
+      "Ramucirumab",
+      "Trastuzumab",
+      "Fruquintinib",
+      "Encorafenib"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Fruquintinib, inhibidor de tirosina quinasa selectivo, ha demostrado beneficio de supervivencia tras líneas estándar incluidas regorafenib y TAS-102."
+  },
+  {
+    "id": "onco-618",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Básico",
+    "pregunta": "¿Qué fármaco inhibe la timidilato sintetasa como principal mecanismo de acción?",
+    "opciones": [
+      "Oxaliplatino",
+      "5-FU",
+      "Bevacizumab",
+      "Aflibercept"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "El 5-fluorouracilo ejerce su efecto antitumoral mediante la inhibición de timidilato sintetasa, bloqueando la síntesis de ADN."
+  },
+  {
+    "id": "onco-619",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué enzima está implicada en el metabolismo del irinotecán y condiciona su toxicidad hematológica?",
+    "opciones": [
+      "DPD",
+      "EGFR",
+      "UGT1A1",
+      "VEGFR"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "UGT1A1 es responsable de inactivar el metabolito SN-38; polimorfismos como *28 incrementan el riesgo de neutropenia grave."
+  },
+  {
+    "id": "onco-620",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Digestivo",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué combinación ha demostrado beneficio en supervivencia global frente a trifluridina-tipiracilo en monoterapia?",
+    "opciones": [
+      "Irinotecán + panitumumab",
+      "Bevacizumab + trifluridina-tipiracilo",
+      "Regorafenib + cetuximab",
+      "Oxaliplatino + nivolumab"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La adición de bevacizumab a trifluridina-tipiracilo ha demostrado mejorar la supervivencia frente a TAS-102 sola en CCR metastásico refractario."
+  },
+  {
+    "id": "onco-621",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál de los siguientes fármacos antiandrógenos de nueva generación requiere administración en ayunas?",
+    "opciones": [
+      "Enzalutamida",
+      "Darolutamida",
+      "Apalutamida",
+      "Abiraterona"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Abiraterona debe administrarse en ayunas para evitar el aumento impredecible de su biodisponibilidad y toxicidad."
+  },
+  {
+    "id": "onco-622",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué estudio respalda el uso de enzalutamida en pacientes con recurrencia bioquímica tras tratamiento curativo del cáncer de próstata?",
+    "opciones": [
+      "LATITUDE",
+      "SPARTAN",
+      "EMBARK",
+      "ARCHES"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "EMBARK demostró beneficio de enzalutamida en combinación con ADT o en monoterapia en varones con recaída bioquímica de alto riesgo."
+  },
+  {
+    "id": "onco-623",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué estrategia terapéutica está indicada en pacientes con cáncer de próstata resistente a la castración metastásico tras docetaxel y ARSI?",
+    "opciones": [
+      "Enzalutamida en monoterapia",
+      "Radio-223 en presencia de metástasis viscerales",
+      "Cabazitaxel",
+      "ADT intermitente"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Cabazitaxel ha mostrado superioridad frente a un segundo ARSI después de docetaxel y terapia hormonal de nueva generación (estudio CARD)."
+  },
+  {
+    "id": "onco-624",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre los estudios genéticos en cáncer de próstata es correcta?",
+    "opciones": [
+      "Solo se recomienda en pacientes con Gleason bajo",
+      "La genómica germinal detecta mutaciones adquiridas en el tumor",
+      "El análisis genético está indicado especialmente en CPRCm y casos familiares",
+      "Los estudios genómicos solo son útiles para diagnóstico"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Las guías recomiendan estudios germinales y somáticos en CPRCm y en pacientes con antecedentes familiares para guiar tratamientos dirigidos y consejo genético."
+  },
+  {
+    "id": "onco-625",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué medida se aconseja al iniciar tratamiento con análogos de GnRH para prevenir el flare tumoral?",
+    "opciones": [
+      "No es necesario prevenir el flare",
+      "Asociar siempre quimioterapia",
+      "Administrar bicalutamida durante el primer mes",
+      "Iniciar conjuntamente radio-223"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La administración de un antiandrógeno (por ejemplo, bicalutamida) durante las primeras 2-4 semanas evita la elevación transitoria de testosterona al comenzar un agonista de GnRH."
+  },
+  {
+    "id": "onco-626",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Básico",
+    "pregunta": "¿Qué característica farmacocinética distingue a darolutamida de otros inhibidores del receptor androgénico?",
+    "opciones": [
+      "Inhibe CYP17",
+      "Se administra con alimentos",
+      "Causa hipotiroidismo",
+      "Elevado riesgo convulsivo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Darolutamida presenta menor penetración en SNC y debe administrarse con comida para maximizar su absorción."
+  },
+  {
+    "id": "onco-627",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué combinación mostró beneficio en el estudio PEACE-1 para pacientes con cáncer de próstata sensible a hormonas metastásico?",
+    "opciones": [
+      "Enzalutamida + docetaxel + ADT",
+      "Abiraterona + docetaxel + ADT",
+      "Apalutamida + docetaxel + ADT",
+      "Darolutamida + docetaxel + ADT"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "PEACE-1 demostró que añadir abiraterona a docetaxel más ADT mejora la supervivencia en CPSCm."
+  },
+  {
+    "id": "onco-628",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué gen se altera con mayor frecuencia en CPRCm y se asocia a mal pronóstico?",
+    "opciones": [
+      "ATM",
+      "BRCA2",
+      "CHEK2",
+      "PTEN"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las mutaciones en BRCA2 son las alteraciones germinales/somáticas más frecuentes en CPRCm y confieren peor respuesta a hormonoterapia."
+  },
+  {
+    "id": "onco-629",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál es un efecto adverso típico de la apalutamida?",
+    "opciones": [
+      "Hipopotasemia",
+      "Convulsiones",
+      "Hipotiroidismo",
+      "Alopecia"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La apalutamida puede provocar hipotiroidismo y requiere monitorización periódica de TSH."
+  },
+  {
+    "id": "onco-630",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Urológico",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué radiofármaco dirigido a PSMA se emplea en CPRCm?",
+    "opciones": [
+      "Radio-223",
+      "Samario-153",
+      "Lutecio-177",
+      "Yodo-131"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El lutecio-177 conjugado a ligandos PSMA administra radiación beta a las células PSMA positivas y está aprobado en CPRCm posterior a ARSI y taxanos."
+  },
+  {
+    "id": "onco-631",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué herramienta ayuda a decidir el uso de quimioterapia en riesgo intermedio de cáncer de mama RH+, HER2–?",
+    "opciones": [
+      "PET-TC",
+      "Mamografía",
+      "Test genómico (p. ej., Oncotype DX)",
+      "Biopsia de ganglio centinela"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Los tests multigénicos como Oncotype DX orientan la indicación de quimioterapia adyuvante en pacientes de riesgo intermedio."
+  },
+  {
+    "id": "onco-632",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Avanzado",
+    "pregunta": "En pacientes HER2+ con enfermedad residual tras neoadyuvancia, ¿qué fármaco reduce el riesgo de recaída?",
+    "opciones": [
+      "Trastuzumab",
+      "Pertuzumab",
+      "Trastuzumab-emtansina (T-DM1)",
+      "Tucatinib"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El estudio KATHERINE demostró beneficio significativo de T-DM1 en pacientes con enfermedad residual HER2+ tras neoadyuvancia."
+  },
+  {
+    "id": "onco-633",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál es la primera línea recomendada para cáncer de mama RH+, HER2– metastásico sin crisis visceral?",
+    "opciones": [
+      "Quimioterapia combinada",
+      "Tamoxifeno en monoterapia",
+      "Inhibidor CDK4/6 + inhibidor de aromatasa",
+      "Trastuzumab + taxano"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La combinación de un inhibidor CDK4/6 con hormonoterapia es estándar por su beneficio en supervivencia y calidad de vida."
+  },
+  {
+    "id": "onco-634",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Qué biomarcador selecciona candidatas a alpelisib en segunda línea de RH+/HER2–?",
+    "opciones": [
+      "PD-L1",
+      "HER2-low",
+      "Mutación PIK3CA",
+      "Ki67"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "Alpelisib está indicado en combinación con fulvestrant en pacientes con mutación PIK3CA confirmada."
+  },
+  {
+    "id": "onco-635",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Cuál es el tratamiento de primera línea para TNBC metastásico PD-L1 positivo (CPS ≥10)?",
+    "opciones": [
+      "Capecitabina + bevacizumab",
+      "Paclitaxel en monoterapia",
+      "Pembrolizumab + quimioterapia",
+      "Olaparib en monoterapia"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "KEYNOTE-355 estableció pembrolizumab más quimioterapia como primera línea para TNBC metastásico con PD-L1 CPS≥10."
+  },
+  {
+    "id": "onco-636",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Intermedio",
+    "pregunta": "Sacituzumab govitecán libera intracelularmente: ",
+    "opciones": [
+      "Carboplatino",
+      "SN-38",
+      "Olaparib",
+      "Paclitaxel"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Sacituzumab govitecán es un ADC que libera SN-38, metabolito activo de irinotecán."
+  },
+  {
+    "id": "onco-637",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Básico",
+    "pregunta": "¿Qué manejo se recomienda ante estomatitis asociada a everolimus?",
+    "opciones": [
+      "G-CSF profiláctico",
+      "Enjuagues con corticoides tópicos",
+      "Suspensión inmediata definitiva",
+      "Cambio a palbociclib"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Los enjuagues con corticoides tópicos y medidas preventivas reducen la severidad de la estomatitis inducida por everolimus."
+  },
+  {
+    "id": "onco-638",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Intermedio",
+    "pregunta": "El uso de capecitabina debe monitorizarse estrechamente si el paciente recibe: ",
+    "opciones": [
+      "Anticonceptivos orales",
+      "Warfarina",
+      "Digoxina",
+      "IBP"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Capecitabina potencia el efecto de los anticoagulantes cumarínicos como warfarina, aumentando el riesgo de sangrado."
+  },
+  {
+    "id": "onco-639",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Básico",
+    "pregunta": "La diarrea NO es un efecto adverso marcado de: ",
+    "opciones": [
+      "Neratinib",
+      "Alpelisib",
+      "Abemaciclib",
+      "Fulvestrant"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "Fulvestrant se asocia sobre todo a reacciones en el punto de inyección y síntomas climatéricos, no a diarrea significativa."
+  },
+  {
+    "id": "onco-640",
+    "categoria": "Tumores sólidos",
+    "subcategoria": "Mama",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál es la pauta habitual de abemaciclib en combinación con hormonoterapia?",
+    "opciones": [
+      "150 mg una vez al día durante 21 días y 7 días de descanso",
+      "125 mg una vez al día de forma continua",
+      "150 mg cada 12 horas de forma continua",
+      "200 mg cada 8 horas durante 14 días por ciclo"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La dosis recomendada de abemaciclib en combinación con hormonoterapia es 150 mg dos veces al día de manera continua."
+  },
+  {
+    "id": "onco-641",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Intermedio",
+    "pregunta": "Respecto a la toxicidad por quimioterapia, indica cuál NO es correcta:",
+    "opciones": [
+      "La toxicidad inmediata aparece en horas o días tras el tratamiento, como las reacciones infusionales",
+      "La toxicidad precoz se produce a días-semanas; un ejemplo serían segundas neoplasias",
+      "La toxicidad retardada ocurre semanas o meses después, como la cardiotoxicidad por antraciclinas",
+      "La toxicidad tardía puede aparecer años más tarde, como la toxicidad reproductiva"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Las segundas neoplasias se consideran toxicidad tardía, no precoz; la afirmación por tanto es incorrecta."
+  },
+  {
+    "id": "onco-642",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Intermedio",
+    "pregunta": "¿Cuál es la herramienta adecuada para valorar náuseas y vómitos inducidos por quimioterapia?",
+    "opciones": [
+      "Respuesta completa",
+      "Protección completa",
+      "Control total durante los primeros 5 días",
+      "Control total durante las primeras 24 h"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "El control total en los primeros 5 días incluye náuseas y vómitos tanto agudos como retardados, siendo la medida más completa."
+  },
+  {
+    "id": "onco-643",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Intermedio",
+    "pregunta": "En relación con la emesis inducida por quimioterapia, señala la afirmación incorrecta:",
+    "opciones": [
+      "La emesis aguda se produce durante las 24 h siguientes al tratamiento",
+      "Prevenir la emesis aguda es clave porque una vez instaurada es difícil de controlar",
+      "La emesis anticipatoria depende del control de la emesis aguda",
+      "Se considera emesis retardada la previa al siguiente ciclo"
+    ],
+    "respuestaCorrecta": 3,
+    "explicacion": "La emesis retardada aparece a las 24-120 h del tratamiento, no justo antes del siguiente ciclo; esa afirmación es falsa."
+  },
+  {
+    "id": "onco-644",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Intermedio",
+    "pregunta": "Paciente candidata a cisplatino + pemetrexed con antecedentes de náuseas. ¿Qué factor adicional aumenta su riesgo de emesis?",
+    "opciones": [
+      "Sexo femenino",
+      "Edad",
+      "Ser fumadora",
+      "Bebedora ocasional"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "Sexo femenino, antecedente de hiperémesis y exposición previa a quimioterapia emetógena son factores de riesgo relevantes."
+  },
+  {
+    "id": "onco-645",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Avanzado",
+    "pregunta": "En el caso anterior, ¿qué régimen antiemético agudo recomiendan las guías ESMO/MASCC para cisplatino?",
+    "opciones": [
+      "Ondansetrón + dexametasona",
+      "Ondansetrón + dexametasona + olanzapina",
+      "Ondansetrón solo",
+      "Dexametasona solo"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "Para quimioterapia altamente emetógena se recomienda triple terapia con antagonista 5-HT3, dexametasona y olanzapina además de un antagonista NK1."
+  },
+  {
+    "id": "onco-646",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Avanzado",
+    "pregunta": "¿Qué pauta es adecuada para prevenir la emesis retardada tras cisplatino?",
+    "opciones": [
+      "Olanzapina días 2-4",
+      "Dexametasona y olanzapina días 2-4",
+      "Aprepitant 80 mg días 2-3, dexametasona y olanzapina",
+      "Aprepitant 80 mg días 2-3, dexametasona y ondansetrón"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La combinación de aprepitant, dexametasona y olanzapina proporciona una cobertura óptima para la fase retardada."
+  },
+  {
+    "id": "onco-647",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Básico",
+    "pregunta": "La eritrodisestesia palmo-plantar es una toxicidad característica de: ",
+    "opciones": [
+      "Mitomicina C",
+      "Capecitabina",
+      "Rituximab",
+      "Everolimus"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La eritrodisestesia palmo-plantar es típica de capecitabina y 5-FU en infusión continua."
+  },
+  {
+    "id": "onco-648",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Básico",
+    "pregunta": "¿Con qué fármaco se asocia clásicamente la diarrea de tipo colinérgico?",
+    "opciones": [
+      "5-fluorouracilo",
+      "Folinato cálcico",
+      "Irinotecán",
+      "Oxaliplatino"
+    ],
+    "respuestaCorrecta": 2,
+    "explicacion": "La diarrea colinérgica aguda es característica de irinotecán y responde a atropina."
+  },
+  {
+    "id": "onco-649",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Intermedio",
+    "pregunta": "Respecto al uso de factores estimulantes de colonias (G-CSF), señale la opción incorrecta:",
+    "opciones": [
+      "En neutropenia febril con neumonía se puede valorar tratamiento con G-CSF",
+      "La pauta de filgrastim es de 7 mg/kg/día SC",
+      "En esquemas con riesgo ≥20% se recomienda profilaxis primaria",
+      "Pegfilgrastim se administra 6 mg en dosis única"
+    ],
+    "respuestaCorrecta": 1,
+    "explicacion": "La dosis habitual de filgrastim es 5 µg/kg/día; 7 mg/kg sería erróneo."
+  },
+  {
+    "id": "onco-650",
+    "categoria": "Cuidados y soporte integral",
+    "subcategoria": "Toxicidad y complicaciones",
+    "dificultad": "Básico",
+    "pregunta": "¿Qué fármaco puede provocar cardiotoxicidad generalmente reversible durante el tratamiento oncológico?",
+    "opciones": [
+      "Trastuzumab",
+      "Bevacizumab",
+      "Cetuximab",
+      "Ipilimumab"
+    ],
+    "respuestaCorrecta": 0,
+    "explicacion": "La cardiotoxicidad de trastuzumab suele ser reversible tras su interrupción y manejo adecuado."
   }
 ]

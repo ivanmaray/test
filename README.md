@@ -34,6 +34,7 @@ El historial sigue guardándose en `localStorage`, pero también se envía a Sup
 | `configuracion`   | `jsonb`           |                                            |
 | `preguntas`       | `jsonb`           |                                            |
 | `respuestas`      | `jsonb`           |                                            |
+| `respuestas_texto`| `jsonb`           | opcional; respuestas abiertas (rosco)      |
 | `aciertos`        | `integer`         |                                            |
 | `tiempo_total`    | `integer`         | segundos                                   |
 | `tiempo_empleado` | `integer`         | segundos                                   |
